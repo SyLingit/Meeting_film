@@ -73,7 +73,7 @@ public class FilmController {
     @RequestMapping(value = "/film:add",method = RequestMethod.POST)
     public BaseResponseVO saveFilmInfo(@RequestBody FilmSavedReqVO filmSavedReqVO) throws CommonServiceException {
 
-        filmServiceAPI.saveFilm((filmSavedReqVO));
+        filmServiceAPI.saveFilm(filmSavedReqVO);
 
         return BaseResponseVO.success();
 
