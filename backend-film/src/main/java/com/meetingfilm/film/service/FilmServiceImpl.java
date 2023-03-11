@@ -74,8 +74,8 @@ public class FilmServiceImpl implements FilmServiceAPI{
             film.setFilmTime(ToolUtils.str2LocalDateTime(reqVO.getFilmTime()+" 00:00:00"));
             film.setFilmStatus(ToolUtils.str2Int(reqVO.getFilmStatus()));
 
-
             filmTMapper.insert(film);
+
             //保存电影字表
             MoocFilmInfoT filmInfo = new MoocFilmInfoT();
             filmInfo.setFilmId(film.getUuid()+"");
@@ -86,7 +86,6 @@ public class FilmServiceImpl implements FilmServiceAPI{
             filmInfo.setBiography(reqVO.getBiography());
             filmInfo.setDirectorId(ToolUtils.str2Int(reqVO.getDirectorId()));
             filmInfo.setFilmImgs(reqVO.getFilmImgs());
-
 
             filmInfoTMapper.insert(filmInfo);
 
