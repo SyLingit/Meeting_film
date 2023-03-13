@@ -35,7 +35,7 @@ public class FilmController {
         //调用逻辑层，获取返回参数
          IPage<DescribeActorsRespVO> results = filmServiceAPI.describeActors(basePageVO.getNowPage(),basePageVO.getPageSize());
 
-        Map<String,Object> actors = describePageResult(results,"actors");
+         Map<String,Object> actors = describePageResult(results,"actors");
         return BaseResponseVO.success(actors);
     }
 

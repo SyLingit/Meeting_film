@@ -17,7 +17,7 @@
     <modules>
         <module>backend-user</module>
         <module>backend-film</module>
-<!--        <module>backend-cinema</module>-->
+        <module>backend-cinema</module>
         <module>backend-common</module>
         <module>backend-utils</module>
         <module>backend-eureka-server</module>
@@ -36,6 +36,7 @@
         <fastjason.version>1.2.60</fastjason.version>
         <jjwt.version>0.9.0</jjwt.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
