@@ -15,8 +15,8 @@ public class BasePageVO extends BaseRequestVO {
     @Override
     public void checkParam() throws CommonServiceException {
 
-//        if(ToolUtils.strIsNull(String.valueOf(nowPage)) || ToolUtils.strIsNull(String.valueOf(pageSize))) {
-//            throw new CommonServiceException(404, "username or password must be required!");
-//        }
+        if(ToolUtils.strIsNull(String.valueOf(nowPage)) || ToolUtils.strIsNull(String.valueOf(pageSize))) {
+            throw new CommonServiceException(404, "nowPage and pageSize must be not empty!");
+        }
     }
 }

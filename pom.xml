@@ -21,6 +21,7 @@
         <module>backend-common</module>
         <module>backend-utils</module>
         <module>backend-eureka-server</module>
+        <module>backend-hall</module>
     </modules>
 
     <properties>
